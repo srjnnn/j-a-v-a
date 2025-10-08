@@ -5,9 +5,15 @@ public class Car {
     int price;
     float fuelInLitres;
     int maxSpeed;
+    String color;
     int seatsNumber;
 
-
+Car(String color){
+   this.color= color;
+   this.fuelInLitres = 2;
+   this.maxSpeed=250;
+   this.seatsNumber = 4;
+}
     public void Drive(){
         System.out.println("the car is being driven");
         fuelInLitres--;
